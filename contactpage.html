@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+
+<body>
+  <header>
+    Contact Me
+    <nav>
+      <a href="homepage.html">Home</a>
+      <a href="aboutmepage.html">About</a>
+      <a href="resumepage.html">Resume</a>
+      <a href="projectpage.html">Project</a>
+    </nav>
+  </header>
+  <hr>
+  <form action="#" method="post">
+    <fieldset>
+        <legend>Contact Form</legend>
+        <label for="first-name">First Name:</label><br>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="last-name">Last Name:</label><br>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <optgroup label ="Group1"> 
+            <option value="Option1">Option1</option>
+            <option value="Option2">Option2</option>
+          </optgroup> 
+          <optgroup label = "Group2">
+            <option value="Option3">Option3</option>
+            <option value="Option4">Option4</option>
+          </optgroup>
+          <option value="" >Default</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+        
+        <p>Press <kbd>submit</kbd> when done to submit message! (<code>button</code> doesn't actually work yet...)</p>
+        <button type="button">Submit</button>
+    </fieldset>
+  </form>
+  <hr>
+  <footer>
+    <strong>For direct messages:</strong>
+    <address>
+        Benjamin Ly <br>
+        <em>Email:</em><a href="mailto:bjly@ucsd.edu">bjly@ucsd.edu</a><br>
+        <em>Linkedin:</em><a href="https://www.linkedin.com/in/benjamin-j-ly/">Click here</a>
+    </address>
+  </footer>
+
+</body>
+</html>

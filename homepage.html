@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Ly - Portfolio</title>
+    <script>
+      class HelloWorld extends HTMLElement {
+        constructor() {
+          super();
+          console.log("Hello World!");
+        }
+      }
+
+      customElements.define('hello-world', HelloWorld);
+    </script>
+    <style>
+      header{
+        font-size: 40px
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        Welcome to my website! – Benjamin Ly
+    </header>
+    <hello-world></hello-world>
+    <main>
+        <div class="intro">
+            <p>I am a recent UCSD graduate pursuing Biomedical Informatics as an <del>oops!</del> <ins>analyst</ins> for hospitals and research labs!</p>
+        </div>
+        <hr>
+
+        <search>
+          <form>
+            <input title="project" id="project" placeholder="Project Search">
+          </form>
+        </search>
+
+        <hgroup>
+            <h3>
+                <a href="aboutmepage.html">About Me</a>
+            </h3>
+            <p>Bio, Interests, Education Previous Experience</p>
+        </hgroup>
+
+        <hgroup>
+          <h3>Project Info</h3>
+          <p>My research project focuses on performing a risk factor analysis for young onset peritoneal carcinomatosis. Analysis was done using R-Studio and the method was univariable and multivariable logistic regression.</p>
+          <p><a href="projectpage.html">View full project.</a></p>
+        </hgroup>
+
+        <button type="button">Show preview of project.</button>
+
+        <template id="projectTemplate">
+          <div class="project-preview">
+            <iframe src="dbmi-pres.pdf" title="Risk Factor Analysis of Young Onset Peritoneal Carcinomatosis"></iframe>
+          </div>         
+        </template>
+
+        <noscript>
+          Javascript is required to view project.
+        </noscript>
+
+        <table>
+          <colgroup>
+            <col span="2" style="background-color:rgb(98, 229, 120)">
+          </colgroup>
+          <tr>
+            <th>Prev. Experience</th>
+            <th>Contact Me</th>
+          </tr>
+          <tr>
+            <td><a href="resumepage.html">Resume</a></td>
+            <td><a href="contactpage.html">Contact</a></td>
+          </tr>
+        </table>
+
+        <canvas></canvas>
+
+        <script></script>
+
+        <hr>
+        <footer>
+          <strong>For direct messages:</strong>
+          <address>
+            Benjamin Ly <br>
+            <em>Email:</em><a href="mailto:bjly@ucsd.edu">bjly@ucsd.edu</a><br>
+            <em><span style="color:blue">Linkedin:</span></em><a href="https://www.linkedin.com/in/benjamin-j-ly/">Click here</a>
+          </address>
+        </footer>
+    </main>
+</body>
+</html>
